@@ -19,4 +19,5 @@
 ### Other Papers
 
 -  [Architecture of a database system](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)
+-  [Red Book - 5th edition](http://tm.durusau.net/?p=66114)
 
