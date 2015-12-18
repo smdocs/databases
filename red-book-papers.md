@@ -13,3 +13,6 @@
 11. Web Data introduced by Peter Bailis 
 12. A Biased Take on a Moving Target: Complex Analytics by Michael Stonebraker 
 13. A Biased Take on a Moving Target: Data Integration by Michael Stonebraker
+14. Anatomy of a database system
+
+
