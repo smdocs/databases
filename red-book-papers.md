@@ -16,3 +16,7 @@
 14. Anatomy of a database system
 
 
+### Other Papers
+
+-  [Architecture of a database system](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)
+
