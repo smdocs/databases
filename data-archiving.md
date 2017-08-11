@@ -1,11 +1,3 @@
-- Feature Name: Backup & Restore
-- Status: in-progress
-- Start Date: 2016-07-13
-- Authors: Daniel Harrison
-- RFC PR: [#8966](https://github.com/cockroachdb/cockroach/pull/8966)
-- Cockroach Issue: [#551](https://github.com/cockroachdb/cockroach/issues/551)
-
-
 # Summary
 
 Full Backup / Incremental Backup / Restore from Backup / Bulk Ingest
@@ -13,19 +5,15 @@ Full Backup / Incremental Backup / Restore from Backup / Bulk Ingest
 
 # Motivation
 
-Any durable datastore is expected to have the ability to save a snaphot of data
-and later restore from that snapshot. Even in a system that can gracefully
-handle a configurable number of node failues, there are other motivations: a
-general sense of security, "Oops I dropped a table", legally required data
-archiving, and others.
+Any durable datastore is expected to have the ability to save a snaphot of data and later restore from that snapshot. Even in a system that can gracefully handle a configurable number of node failues, there are other motivations: a general sense of security, "Oops I dropped a table", legally required data archiving, and others.
 
-Additionally, in an era where it's easy and useful to produce datasets in the
-hundreds of gigabytes or terabyte range, CockroachDB has an opportunity for a
-competitive advantage. First class support for using consistent snapshots as an
-input to a bulk data pipeline (without any possibility of affecting production
-traffic) as well as the ability to very quickly serve the output of them could
-be a deciding factor for potential customers.
+Due to the principle of never commiting destructive updates and having versioned changes, it's easy and useful to produce datasets in the hundreds of gigabytes or terabyte range, therefore we need support for using consistent snapshots as an input to a bulk data pipeline (without any possibility of affecting production traffic) as well as the ability to very quickly serve the output of them.
 
+Data can be labled as HOT, WARM, COLD and FROZEN based on its usage pattern;
+1. ***Hot***
+2. ***Warm***
+3. ***Cold***
+4. ***Frozen***
 
 # Detailed design
 
