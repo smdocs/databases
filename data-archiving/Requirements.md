@@ -61,11 +61,6 @@ The overall process flow for data archiving is illustrated in the following diag
 ---
 ## 3. Options for adapting existing solutions
 
-Our choice of options should include any in-house solutions, supported technologies so that we can get this project off the ground as soon as possible thus buying us more time to evaluate any  other solutions for the future.
-
-We should be able to build client API's and services such that the underlying implementation is abstracted from client usage therefore giving us more room for technology changes in the later phases.
-
-
 ---
 ## 4. Unresolved questions
 
