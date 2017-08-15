@@ -55,7 +55,7 @@ In general, all our data can be classified as;
 We must also consider the time dimension. Over time, business requirements for data can change, with data assigned to different service levels and migrated to different storage tiers to reduce costs.  But the first and most important step is to classify the active data sets into the right service levels, and to place them on appropriate storage tiers when they're created.
 
 The overall process flow for data archiving is illustrated in the following diagram:
-![](Data-Archiving-Diagram.jpg)
+![](Data-Archiving-Diagram.gif)
 
 
 ---
